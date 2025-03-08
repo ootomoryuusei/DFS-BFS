@@ -3,18 +3,12 @@
 ///  2023/12/6 花井
 /// </summary>
 
-#include "global.h"
+#include "./global.h"
 #include "RootObject.h"
 #include "../ImGui/imgui_impl_dxlib.hpp"
 #include <time.h>
+#include"../Screen.h"
 
-namespace Screen {
-	static const int WIDTH = 1280;
-	static const int HEIGHT = 720;
-	static const char* WINDOW_NAME = "SampleGame";
-	static const int WINDOW_EXTEND = 0;
-	static const int WINDOW_MODE = 1;
-};
 
 // エントリーポイント
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
