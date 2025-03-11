@@ -45,8 +45,11 @@ struct AI_MOVEING
 {
 	bool rightHandMove;
 	bool leftHandMove;
+	bool xyCloserMove;
 	bool xyCloserRandomMove;
 	bool pickRorXY;
+	bool BFS;
+	bool Dijkstra;
 };
 
 const int CHA_WIDTH = 32;

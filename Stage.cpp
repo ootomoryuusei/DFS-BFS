@@ -86,8 +86,8 @@ Stage::Stage(GameObject* parent) : GameObject(parent,"Stage")
 {
 	stageData = vector(STAGE_HEIGHT, vector<StageObj>(STAGE_WIDTH, { STAGE_OBJ::EMPTY, 1.0f }));
 
-	/*MakeMazeDigDug(STAGE_WIDTH, STAGE_HEIGHT, stageData);*/
-	for (int y = 0; y < STAGE_HEIGHT; y++)
+	MakeMazeDigDug(STAGE_WIDTH, STAGE_HEIGHT, stageData);
+	/*for (int y = 0; y < STAGE_HEIGHT; y++)
 	{
 		for (int x = 0; x < STAGE_WIDTH; x++)
 		{
@@ -104,7 +104,7 @@ Stage::Stage(GameObject* parent) : GameObject(parent,"Stage")
 			}
 
 		}
-	}
+	}*/
 	setStageRects();
 }
 

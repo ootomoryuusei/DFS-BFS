@@ -21,7 +21,10 @@ public:
     void XYCloserMoveRandom();
     void RightHandMove();
     void LeftHandMove();
+    void BFS(Point _start,Point _goal);
     void Dijkstra(Point sp, Point gp);
+
+    void MoveTowardsPlayer();
 
     AI_MOVEING GetIsAIMove() { return aiMove_; }
 private:
@@ -36,4 +39,7 @@ private:
     AI_MOVEING aiMove_;
     const float fixedTime_;
     float time_;
+
+    std::vector<Point> path_; // BFSÇ≈ìæÇΩåoòHÇï€ë∂Ç∑ÇÈ
+    int pathIndex_; // åªç›ÇÃêiçsèÛãµ
 };
